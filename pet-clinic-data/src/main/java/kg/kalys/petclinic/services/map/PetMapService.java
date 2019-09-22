@@ -2,9 +2,11 @@ package kg.kalys.petclinic.services.map;
 
 import kg.kalys.petclinic.model.Pet;
 import kg.kalys.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Pet findById(Long id) {
